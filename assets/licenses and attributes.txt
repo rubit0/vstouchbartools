@@ -1,0 +1,2 @@
+bug: https://icons8.com/icon/16135/bug
+flask: https://icons8.com/icon/set/lab/win10
