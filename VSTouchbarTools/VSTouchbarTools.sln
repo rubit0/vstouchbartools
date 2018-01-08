@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSTouchbarTools", "VSTouchbarTools\VSTouchbarTools.csproj", "{728CF31C-DCCD-4B7B-A126-1FAC3F899C87}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSTouchbarTools.Lib", "VSTouchbarTools.Lib\VSTouchbarTools.Lib.csproj", "{2C8184DF-D1B4-4B05-9A96-75B83A047106}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSTouchbarTools.Tests", "VSTouchbarTools.Tests\VSTouchbarTools.Tests.csproj", "{273E1FA2-1C02-4DE0-9446-6588F57AFFD9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{728CF31C-DCCD-4B7B-A126-1FAC3F899C87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{728CF31C-DCCD-4B7B-A126-1FAC3F899C87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{728CF31C-DCCD-4B7B-A126-1FAC3F899C87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C8184DF-D1B4-4B05-9A96-75B83A047106}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C8184DF-D1B4-4B05-9A96-75B83A047106}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C8184DF-D1B4-4B05-9A96-75B83A047106}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C8184DF-D1B4-4B05-9A96-75B83A047106}.Release|Any CPU.Build.0 = Release|Any CPU
+		{273E1FA2-1C02-4DE0-9446-6588F57AFFD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{273E1FA2-1C02-4DE0-9446-6588F57AFFD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{273E1FA2-1C02-4DE0-9446-6588F57AFFD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{273E1FA2-1C02-4DE0-9446-6588F57AFFD9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
