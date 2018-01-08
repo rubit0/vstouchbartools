@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Xml;
-using VSTouchbarTools.Lib.Elemens;
+using VSTouchbarTools.Lib.Elements;
 
 namespace VSTouchbarTools.Lib.Container
 {

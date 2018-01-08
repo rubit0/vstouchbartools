@@ -5,7 +5,7 @@ using System.Xml;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using VSTouchbarTools.Lib;
 using VSTouchbarTools.Lib.Container;
-using VSTouchbarTools.Lib.Elemens;
+using VSTouchbarTools.Lib.Elements;
 
 namespace VSTouchbarTools.Tests
 {
@@ -43,7 +43,7 @@ namespace VSTouchbarTools.Tests
             var scroll = new ScrollViewControl("X");
             scroll.ChildElements.Add(new ButtonElement("s1", "1,2,3", "Scroll BT1", CustomIcons.GoToIcon));
             scroll.ChildElements.Add(new ButtonElement("s2", "ctrl+f", "Scroll BT2") { Width = 80 });
-            scroll.ChildElements.Add(new ButtonElement("s3", "ctrl+f", "Scroll BT3") { Width = 80 });
+            scroll.ChildElements.Add(new ButtonElement("s3", "ctrl+f", "Scroll BT3") { Width = 120 });
             scroll.ChildElements.Add(new ButtonElement("s4", "ctrl+f", "Scroll BT4") { Width = 80 });
 
             var pop = new PopoverControl("Y", "Pop Items", CustomIcons.SurroundIcon);

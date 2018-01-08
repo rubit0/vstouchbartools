@@ -1,4 +1,4 @@
-﻿namespace VSTouchbarTools.Lib.Elemens
+﻿namespace VSTouchbarTools.Lib.Elements
 {
     public class SegmentElement : ButtonElement
     {

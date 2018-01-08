@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Xml;
-using VSTouchbarTools.Lib.Elemens;
+using VSTouchbarTools.Lib.Elements;
 
 namespace VSTouchbarTools.Lib.Container
 {

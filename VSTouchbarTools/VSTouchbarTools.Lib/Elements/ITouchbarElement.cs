@@ -1,6 +1,6 @@
 using System.Xml;
 
-namespace VSTouchbarTools.Lib.Elemens
+namespace VSTouchbarTools.Lib.Elements
 {
     public interface ITouchbarElement
     {
