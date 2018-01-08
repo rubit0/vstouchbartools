@@ -38,6 +38,20 @@ namespace VSTouchbarTools.Lib.Container
             idAtr.Value = Id;
             node.Attributes.Append(idAtr);
 
+            if (!string.IsNullOrEmpty(Title))
+            {
+                var atr = doc.CreateAttribute("title");
+                atr.Value = Title;
+                node.Attributes.Append(atr);
+            }
+
+            if (!string.IsNullOrEmpty(Image))
+            {
+                var atr = doc.CreateAttribute("image");
+                atr.Value = $"base64:{Image}";
+                node.Attributes.Append(atr);
+            }
+
             if (ChildElements.Any())
                 node.AppendChild(CreateIdentifiedChildNode(doc, ChildElements, ChildElementName, "PopoverChild"));
 
