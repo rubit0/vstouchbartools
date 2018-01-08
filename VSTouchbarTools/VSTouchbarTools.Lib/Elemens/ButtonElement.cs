@@ -53,7 +53,11 @@ namespace VSTouchbarTools.Lib.Elemens
             if (!string.IsNullOrEmpty(Image))
             {
                 var atr = doc.CreateAttribute("image");
-                atr.Value = !ScaleImage2X ? $"base64:{Image}" : $"base64:2x:{Image}";
+                if (Image.Contains("Template"))
+                    atr.Value = Image;
+                else
+                    atr.Value = !ScaleImage2X ? $"base64:{Image}" : $"base64:2x:{Image}";
+
                 node.Attributes.Append(atr);
             }
 
