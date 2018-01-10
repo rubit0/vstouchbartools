@@ -34,6 +34,7 @@ namespace VSTouchbarTools
     [ProvideMenuResource("Menus.ctmenu", 1)]
     [Guid(OpenWindowCommandPackage.PackageGuidString)]
     [SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1650:ElementDocumentationMustBeSpelledCorrectly", Justification = "pkgdef, VS and vsixmanifest are valid VS terms")]
+    [ProvideToolWindow(typeof(ConfigurationWindow))]
     public sealed class OpenWindowCommandPackage : Package
     {
         /// <summary>
@@ -62,6 +63,7 @@ namespace VSTouchbarTools
         {
             OpenWindowCommand.Initialize(this);
             base.Initialize();
+            ConfigurationWindowCommand.Initialize(this);
         }
 
         #endregion

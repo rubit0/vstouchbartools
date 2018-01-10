@@ -50,7 +50,6 @@ namespace VSTouchbarTools.Lib.Container
                 var atr = doc.CreateAttribute("image");
                 atr.Value = Image.Contains("Template") ? Image : $"base64:{Image}";
 
-                atr.Value = $"base64:{Image}";
                 node.Attributes.Append(atr);
             }
 

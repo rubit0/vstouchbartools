@@ -6,5 +6,6 @@
     public static class SystemStandardIcons
     {
         public const string Play = "NSTouchBarPlayTemplate";
+        public const string IconsView = "NSImageNameTouchBarIconViewTemplate";
     }
 }

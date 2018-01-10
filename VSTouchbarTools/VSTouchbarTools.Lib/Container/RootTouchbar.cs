@@ -12,9 +12,19 @@ namespace VSTouchbarTools.Lib.Container
     {
         public List<ITouchbarElement> Elements { get; set; } = new List<ITouchbarElement>();
 
+        private readonly string _id;
+
+        public RootTouchbar(string id = null)
+        {
+            if (id == null)
+                _id = "touchbar" + new Random().Next(1000, 9999);
+            else
+                _id = id;
+        }
+
         public XmlDocument ToXml()
         {
-            if(!Enumerable.Any<ITouchbarElement>(Elements))
+            if (!Elements.Any<ITouchbarElement>())
                 throw new InvalidOperationException("There are no elements!");
 
             //Create doc
@@ -24,7 +34,7 @@ namespace VSTouchbarTools.Lib.Container
 
             //Add root attributes
             var idAtr = doc.CreateAttribute("id");
-            idAtr.Value = "devenv";
+            idAtr.Value = _id;
             root.Attributes.Append(idAtr);
             var elementsAtr = doc.CreateAttribute("defaultItemIdentifiers");
             elementsAtr.Value = GetElemenIds();
@@ -34,7 +44,7 @@ namespace VSTouchbarTools.Lib.Container
             foreach (var element in Elements)
             {
                 var node = element.ToNode(doc);
-                if(node != null)
+                if (node != null)
                     root.AppendChild(node);
             }
 
